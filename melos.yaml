@@ -37,3 +37,11 @@ scripts:
   version:
     run: melos version
     description: Bump version in all packages.
+
+  build:
+    run: melos exec -- "fvm flutter pub run build_runner build --delete-conflicting-outputs"
+    description: Run `build_runner build` in all packages.
+
+  watch:
+    run: melos exec -- "fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+    description: Run `build_runner watch` in all packages.
