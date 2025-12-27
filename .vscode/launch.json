@@ -1,31 +1,32 @@
 {
-    // IntelliSense を使用して利用可能な属性を学べます。
-    // 既存の属性の説明をホバーして表示します。
-    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "todo_sqflite",
-            "request": "launch",
-            "type": "dart",
-            "program": "packages/todo_sqflite/lib/main.dart",
-            "cwd": "packages/todo_sqflite"
-        },
-        {
-            "name": "todo_sqflite (profile mode)",
-            "request": "launch",
-            "type": "dart",
-            "program": "packages/todo_sqflite/lib/main.dart",
-            "cwd": "packages/todo_sqflite",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "todo_sqflite (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "program": "packages/todo_sqflite/lib/main.dart",
-            "cwd": "packages/todo_sqflite",
-            "flutterMode": "release"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "program": "packages/todo_sqflite/lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--debug"
+      ]
+    },
+    {
+      "name": "Release",
+      "program": "packages/todo_sqflite/lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--release"
+      ]
+    },
+    {
+      "name": "Profile",
+      "program": "packages/todo_sqflite/lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--profile"
+      ]
+    }
+  ]
 }
