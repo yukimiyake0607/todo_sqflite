@@ -1,0 +1,35 @@
+name: todo_sqflite_monorepo
+
+repository: https://github.com/your-username/todo_sqflite
+
+packages:
+  - packages/**
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  analyze:
+    run: melos exec -- "fvm flutter analyze ."
+    description: Run `flutter analyze` in all packages.
+
+  format:
+    run: melos exec -- "fvm dart format ."
+    description: Run `dart format` in all packages.
+
+  test:
+    run: melos exec -- "fvm flutter test"
+    description: Run `flutter test` in all packages.
+
+  clean:
+    run: melos exec -- "fvm flutter clean"
+    description: Run `flutter clean` in all packages.
+
+  get:
+    run: melos exec -- "fvm flutter pub get"
+    description: Run `flutter pub get` in all packages.
+
+  version:
+    run: melos version
+    description: Bump version in all packages.

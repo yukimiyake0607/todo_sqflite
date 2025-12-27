@@ -19,10 +19,8 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code settings (launch.json, settings.json, extensions.jsonはバージョン管理に含める)
+# .vscode/ はコメントアウト（設定ファイルは共有する）
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -34,6 +32,16 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Melos related
+.melos_tool/
+packages/*/.dart_tool/
+packages/*/.flutter-plugins
+packages/*/.flutter-plugins-dependencies
+packages/*/build/
+
+# FVM related
+.fvm/flutter_sdk/
+
 # Symbolication related
 app.*.symbols
 
@@ -41,6 +49,6 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+packages/todo_sqflite/android/app/debug
+packages/todo_sqflite/android/app/profile
+packages/todo_sqflite/android/app/release

@@ -1,0 +1,51 @@
+{
+  // FVMを使用するようにFlutter SDKパスを設定
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  // FVMを使用する場合、この設定で自動的に検出される
+  "dart.flutterSdkPaths": [".fvm/flutter_sdk"],
+  
+  // モノレポ構造でのファイル検索設定
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/.packages": true,
+    "**/build": true,
+    "**/.fvm/flutter_sdk": true
+  },
+  
+  // 検索から除外するパターン
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/.fvm/flutter_sdk": true,
+    "**/packages/*/build": true
+  },
+  
+  // ファイルウォッチャーの除外設定
+  "files.watcherExclude": {
+    "**/.dart_tool/**": true,
+    "**/build/**": true,
+    "**/.fvm/flutter_sdk/**": true,
+    "**/packages/*/build/**": true
+  },
+  
+  // Dart/Flutterの設定
+  "dart.analysisExcludedFolders": [
+    ".fvm/flutter_sdk",
+    "build",
+    "packages/*/build"
+  ],
+  
+  // エディタ設定
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  
+  // ファイル関連付け
+  "files.associations": {
+    "*.dart": "dart"
+  }
+}

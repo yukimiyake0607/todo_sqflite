@@ -1,0 +1,21 @@
+name: todo_sqflite
+description: "Todo app using SQLite"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dart_flutter_common:
+    path: ../dart_flutter_common
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

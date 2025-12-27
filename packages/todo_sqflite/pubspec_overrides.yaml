@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: dart_flutter_common
+dependency_overrides:
+  dart_flutter_common:
+    path: ../dart_flutter_common
