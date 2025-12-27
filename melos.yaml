@@ -2,6 +2,10 @@ name: todo_sqflite_monorepo
 
 repository: https://github.com/your-username/todo_sqflite
 
+# fvmで管理されているFlutter SDKのパスを指定
+# これにより、melos bootstrapもfvm経由で実行されます
+sdkPath: .fvm/flutter_sdk
+
 packages:
   - packages/**
 
