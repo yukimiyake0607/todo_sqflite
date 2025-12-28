@@ -13,6 +13,7 @@ dependencies:
   flutter_hooks: ^0.21.3
   dart_flutter_common:
     path: ../dart_flutter_common
+  go_router: ^17.0.0
 
 dev_dependencies:
   flutter_test:
