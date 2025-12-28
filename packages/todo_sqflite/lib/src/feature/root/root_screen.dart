@@ -6,7 +6,7 @@ class RootScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('todo-app')),
+      appBar: AppBar(title: Text('Todo App')),
       body: Center(child: Text('Hello World!')),
     );
   }
