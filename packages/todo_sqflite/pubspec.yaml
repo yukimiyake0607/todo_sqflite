@@ -14,6 +14,7 @@ dependencies:
   dart_flutter_common:
     path: ../dart_flutter_common
   go_router: ^17.0.0
+  very_good_analysis: ^9.0.0
 
 dev_dependencies:
   flutter_test:
