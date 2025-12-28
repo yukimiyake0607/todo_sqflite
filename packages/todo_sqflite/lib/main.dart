@@ -3,7 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:todo_sqflite/src/routing/app_router.dart';
 
 void main() {
-  runApp(ProviderScope(child: MainApp()));
+  runApp(ProviderScope(child: const MainApp()));
 }
 
 class MainApp extends ConsumerWidget {
